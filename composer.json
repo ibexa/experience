@@ -16,5 +16,10 @@
         "ezsystems/ezplatform-permissions": "^1.1@dev",
         "ezsystems/ezplatform-segmentation": "^1.1@dev",
         "ezsystems/ezplatform-site-factory": "^1.3@dev",
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.3.x-dev"
+        }
     }
 }

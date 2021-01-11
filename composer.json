@@ -9,7 +9,6 @@
     "require": {
         "php": "^7.3",
         "ibexa/content": "^3.3.x-dev",
-        "ibexa/image-editor": "^1.0.x-dev",
         "ezsystems/ezplatform-form-builder": "^2.3.x-dev",
         "ezsystems/ezplatform-page-builder": "^2.3.x-dev",
         "ezsystems/ezplatform-page-fieldtype": "^2.3.x-dev",

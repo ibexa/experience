@@ -14,7 +14,7 @@ Learn more about [Ibexa DXP](https://www.ibexa.co/products).
 1. Require `ibexa-experience` package:
     ```
     composer config repositories.ibexa composer https://updates.ibexa.co
-    composer require ibexa-experience
+    composer require ibexa/experience
     ```
 
 ## COPYRIGHT

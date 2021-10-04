@@ -9,12 +9,12 @@
     "require": {
         "php": "^7.3",
         "ibexa/content": "^4.0.x-dev",
-        "ezsystems/ezplatform-form-builder": "^3.0.x-dev",
-        "ezsystems/ezplatform-page-builder": "^3.0.x-dev",
-        "ezsystems/ezplatform-page-fieldtype": "^3.0.x-dev",
-        "ezsystems/ezplatform-permissions": "^2.0.x-dev",
-        "ezsystems/ezplatform-segmentation": "^2.0.x-dev",
-        "ezsystems/ezplatform-site-factory": "^2.0.x-dev"
+        "ezsystems/ezplatform-form-builder": "^4.0.x-dev",
+        "ezsystems/ezplatform-page-builder": "^4.0.x-dev",
+        "ezsystems/ezplatform-page-fieldtype": "^4.0.x-dev",
+        "ezsystems/ezplatform-permissions": "^4.0.x-dev",
+        "ezsystems/ezplatform-segmentation": "^4.0.x-dev",
+        "ezsystems/ezplatform-site-factory": "^4.0.x-dev"
     },
     "extra": {
         "branch-alias": {

@@ -6,15 +6,17 @@
     "repositories": [
         {"type": "composer", "url": "https://updates.ibexa.co"}
     ],
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
     "require": {
         "php": "^7.3",
-        "ibexa/content": "^4.0.x-dev",
-        "ezsystems/ezplatform-form-builder": "^4.0.x-dev",
-        "ezsystems/ezplatform-page-builder": "^4.0.x-dev",
-        "ezsystems/ezplatform-page-fieldtype": "^4.0.x-dev",
-        "ezsystems/ezplatform-permissions": "^4.0.x-dev",
-        "ezsystems/ezplatform-segmentation": "^4.0.x-dev",
-        "ezsystems/ezplatform-site-factory": "^4.0.x-dev"
+        "ibexa/content": "~4.0.0@alpha",
+        "ezsystems/ezplatform-form-builder": "~4.0.0@alpha",
+        "ezsystems/ezplatform-page-builder": "~4.0.0@alpha",
+        "ezsystems/ezplatform-page-fieldtype": "~4.0.0@alpha",
+        "ezsystems/ezplatform-permissions": "~4.0.0@alpha",
+        "ezsystems/ezplatform-segmentation": "~4.0.0@alpha",
+        "ezsystems/ezplatform-site-factory": "~4.0.0@alpha"
     },
     "extra": {
         "branch-alias": {

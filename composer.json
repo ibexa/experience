@@ -8,7 +8,7 @@
     ],
     "require": {
         "php": "^7.3",
-        "ibexa/content": "dev-rebranding",
+        "ibexa/content": "^4.0.x-dev",
         "ibexa/form-builder": "^4.0.x-dev",
         "ibexa/page-builder": "^4.0.x-dev",
         "ibexa/fieldtype-page": "^4.0.x-dev",

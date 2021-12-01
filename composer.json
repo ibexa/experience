@@ -6,6 +6,8 @@
     "repositories": [
         {"type": "composer", "url": "https://updates.ibexa.co"}
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^7.3",
         "ibexa/content": "^4.0.x-dev",
@@ -15,6 +17,9 @@
         "ibexa/permissions": "^4.0.x-dev",
         "ibexa/segmentation": "^4.0.x-dev",
         "ibexa/site-factory": "^4.0.x-dev"
+    },
+    "require-dev": {
+        "ibexa/ci-scripts": "^0.1@dev"
     },
     "extra": {
         "branch-alias": {

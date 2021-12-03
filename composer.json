@@ -6,17 +6,17 @@
     "repositories": [
         {"type": "composer", "url": "https://updates.ibexa.co"}
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "require": {
         "php": "^7.3",
-        "ibexa/content": "^4.0.x-dev",
-        "ibexa/form-builder": "^4.0.x-dev",
-        "ibexa/page-builder": "^4.0.x-dev",
-        "ibexa/fieldtype-page": "^4.0.x-dev",
-        "ibexa/permissions": "^4.0.x-dev",
-        "ibexa/segmentation": "^4.0.x-dev",
-        "ibexa/site-factory": "^4.0.x-dev"
+        "ibexa/content": "~4.0.0@beta",
+        "ibexa/form-builder": "~4.0.0@beta",
+        "ibexa/page-builder": "~4.0.0@beta",
+        "ibexa/fieldtype-page": "~4.0.0@beta",
+        "ibexa/permissions": "~4.0.0@beta",
+        "ibexa/segmentation": "~4.0.0@beta",
+        "ibexa/site-factory": "~4.0.0@beta"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"

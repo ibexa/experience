@@ -9,7 +9,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.3",
+        "php": "^7.3 || ^8.0",
         "ibexa/content": "^3.3.x-dev",
         "ezsystems/ezplatform-form-builder": "^2.3.x-dev",
         "ezsystems/ezplatform-page-builder": "^2.3.x-dev",

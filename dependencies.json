@@ -1,0 +1,8 @@
+[
+    {
+        "requirement": "dev-change-password as 4.0.x-dev",
+        "repositoryUrl": "https://github.com/ibexa/admin-ui",
+        "package": "ibexa/admin-ui",
+        "shouldBeAddedAsVCS": false
+    }
+]

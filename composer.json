@@ -9,7 +9,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.3",
+        "php": "^7.4 || ^8.0",
         "ibexa/content": "^4.0.x-dev",
         "ibexa/form-builder": "^4.0.x-dev",
         "ibexa/page-builder": "^4.0.x-dev",

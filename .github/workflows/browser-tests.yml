@@ -21,6 +21,7 @@ jobs:
             multirepository: true
             timeout: 120
             php-image: "ezsystems/php:7.4-v2-node14"
+            ci-scripts-branch: js-routing-fix
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
@@ -39,6 +40,7 @@ jobs:
             use-compatibility-layer: true
             timeout: 120
             php-image: "ezsystems/php:8.1-v2-node16"
+            ci-scripts-branch: js-routing-fix
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}

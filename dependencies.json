@@ -1,0 +1,8 @@
+[
+    {
+        "requirement": "dev-ibx-2607-fixed-personalized-block-registered-in-content-version as 1.0.x-dev",
+        "repositoryUrl": "https://github.com/ezsystems/ezplatform-personalization",
+        "package": "ezsystems/ezplatform-personalization",
+        "shouldBeAddedAsVCS": true
+    }
+]

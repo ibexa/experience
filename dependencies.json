@@ -1,0 +1,8 @@
+[
+    {
+        "requirement": "dev-IBX-2698-udw-error-when-user-dont-have-product-type as 4.0.x-dev",
+        "repositoryUrl": "https://github.com/ibexa/product-catalog",
+        "package": "ibexa/product-catalog",
+        "shouldBeAddedAsVCS": true
+    }
+]

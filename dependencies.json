@@ -1,0 +1,14 @@
+[
+    {
+        "requirement": "dev-backport-scroll-to-bottom as 8.3.x-dev",
+        "repositoryUrl": "https://github.com/ezsystems/BehatBundle",
+        "package": "ezsystems/behatbundle",
+        "shouldBeAddedAsVCS": false
+    },
+    {
+        "requirement": "dev-udw-load-more-items as 2.3.x-dev",
+        "repositoryUrl": "https://github.com/ezsystems/ezplatform-admin-ui",
+        "package": "ezsystems/ezplatform-admin-ui",
+        "shouldBeAddedAsVCS": false
+    }
+]

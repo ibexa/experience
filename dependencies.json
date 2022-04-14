@@ -1,0 +1,8 @@
+[
+    {
+        "requirement": "dev-fixed_content_and_exp_installation as 4.1.x-dev",
+        "repositoryUrl": "https://github.com/ibexa/product-catalog",
+        "package": "ibexa/product-catalog",
+        "shouldBeAddedAsVCS": true
+    }
+]

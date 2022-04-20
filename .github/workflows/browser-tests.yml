@@ -13,7 +13,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: "4.1.x-dev"
+            project-version: "4.2.x-dev"
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
@@ -31,7 +31,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: "4.1.x-dev"
+            project-version: "4.2.x-dev"
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
@@ -49,7 +49,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: "4.1.x-dev"
+            project-version: "4.2.x-dev"
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
@@ -63,7 +63,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: "4.1.x-dev"
+            project-version: "4.2.x-dev"
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
         secrets:
@@ -76,7 +76,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: "4.1.x-dev"
+            project-version: "4.2.x-dev"
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
         secrets:
@@ -89,7 +89,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: "4.1.x-dev"
+            project-version: "4.2.x-dev"
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=CompoundMapURIMapHost"
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"

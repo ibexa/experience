@@ -10,5 +10,11 @@
         "repositoryUrl": "https://github.com/ibexa/page-builder",
         "package": "ibexa/page-builder",
         "shouldBeAddedAsVCS": true
+    },
+    {
+        "requirement": "dev-remove-random-date-4.0 as 4.0.x-dev",
+        "repositoryUrl": "https://github.com/ibexa/behat",
+        "package": "ibexa/behat",
+        "shouldBeAddedAsVCS": false
     }
 ]

@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-add-collection-contains as 8.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/BehatBundle",
+            "package": "ezsystems/behatbundle",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-rework-assertion as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-builder",
+            "package": "ezsystems/ezplatform-page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-2871-fix-spacing-and-paddings as 4.1.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/system-info",
+            "package": "ibexa/system-info",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-2871-fix-spacing-and-paddings as 4.1.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/taxonomy",
+            "package": "ibexa/taxonomy",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-2871-fix-spacing-and-paddings as 4.1.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/workflow",
+            "package": "ibexa/workflow",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-2871-fix-spacing-and-paddings as 4.1.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-2000_add_search_to_url_wildcard_tab as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-admin-ui",
+            "package": "ezsystems/ezplatform-admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-2000_add_search_to_url_wildcard_tab as 1.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-kernel",
+            "package": "ezsystems/ezplatform-kernel",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-2103_bump-tedious-stash-requirement as 0.9.0",
+            "repositoryUrl": "https://github.com/ezsystems/TedivmStashBundle",
+            "package": "ezsystems/stash-bundle",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "v0.17.1",
+            "repositoryUrl": "https://github.com/tedivm/stash",
+            "package": "tedivm/stash",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

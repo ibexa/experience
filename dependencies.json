@@ -6,6 +6,12 @@
             "repositoryUrl": "https://github.com/ibexa/taxonomy",
             "package": "ibexa/taxonomy",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-2943-section-is-not-fully-switched-when-editing-content-with-multiple-sections as 4.1.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

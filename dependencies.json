@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-2955-merge-up as 4.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

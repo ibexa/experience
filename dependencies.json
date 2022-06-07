@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-2962-replace-deleted-items-scheduler-block as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-fieldtype",
+            "package": "ezsystems/ezplatform-page-fieldtype",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

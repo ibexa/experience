@@ -20,7 +20,6 @@ jobs:
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             job-count: 3
             multirepository: true
-            job-count: 3
             timeout: 120
             php-image: "ezsystems/php:7.4-v2-node14"
         secrets:

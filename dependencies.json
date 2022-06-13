@@ -30,6 +30,12 @@
             "repositoryUrl": "https://github.com/ezsystems/ezplatform-elastic-search-engine",
             "package": "ezsystems/ezplatform-elastic-search-engine",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "^2.5",
+            "repositoryUrl": "https://github.com/doctrine/persistence",
+            "package": "doctrine/persistence",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

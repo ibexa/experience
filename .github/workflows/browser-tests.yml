@@ -10,7 +10,7 @@ on:
 jobs:
     regression-experience-setup1:
         name: "PHP 7.4/Node 14/PostgreSQL/Varnish/Redis/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@fix-pr-builds
         with:
             project-edition: "experience"
             project-version: "4.2.x-dev"
@@ -29,7 +29,7 @@ jobs:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     regression-experience-setup2:
         name: "PHP 8.1/Node 16/MySQL/Compatibility layer"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@fix-pr-builds
         with:
             project-edition: "experience"
             project-version: "4.2.x-dev"
@@ -48,7 +48,7 @@ jobs:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-1:
         name: "Map\\Host matcher tests"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@fix-pr-builds
         with:
             project-edition: "experience"
             project-version: "4.2.x-dev"
@@ -62,7 +62,7 @@ jobs:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-2:
         name: "Map\\URI matcher tests"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@fix-pr-builds
         with:
             project-edition: "experience"
             project-version: "4.2.x-dev"
@@ -75,7 +75,7 @@ jobs:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-3:
         name: "URIElement matcher tests"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@fix-pr-builds
         with:
             project-edition: "experience"
             project-version: "4.2.x-dev"
@@ -88,7 +88,7 @@ jobs:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-4:
         name: "Compound matcher tests"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@fix-pr-builds
         with:
             project-edition: "experience"
             project-version: "4.2.x-dev"

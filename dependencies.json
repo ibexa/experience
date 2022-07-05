@@ -5,7 +5,7 @@
             "requirement": "dev-behat-richtext-stability as 4.1.x-dev",
             "repositoryUrl": "https://github.com/ibexa/admin-ui",
             "package": "ibexa/admin-ui",
-            "shouldBeAddedAsVCS": false
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

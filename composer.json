@@ -16,7 +16,8 @@
         "ibexa/fieldtype-page": "~4.2.x-dev",
         "ibexa/permissions": "~4.2.x-dev",
         "ibexa/segmentation": "~4.2.x-dev",
-        "ibexa/site-factory": "~4.2.x-dev"
+        "ibexa/site-factory": "~4.2.x-dev",
+        "ibexa/corporate-account": "~4.2.x-dev"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"

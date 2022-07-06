@@ -13,6 +13,7 @@
         "ibexa/content": "~4.2.x-dev",
         "ibexa/form-builder": "~4.2.x-dev",
         "ibexa/page-builder": "~4.2.x-dev",
+        "ibexa/fieldtype-address": "~4.2.x-dev",
         "ibexa/fieldtype-page": "~4.2.x-dev",
         "ibexa/permissions": "~4.2.x-dev",
         "ibexa/segmentation": "~4.2.x-dev",

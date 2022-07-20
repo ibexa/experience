@@ -1,6 +1,12 @@
 name: Browser tests
 on:
-    workflow_dispatch: ~
+    workflow_dispatch:
+        inputs:
+            send-success-notification:
+                description: 'Send a notification when the tests pass'     
+                required: false
+                type: boolean
+                default: true
     push:
         branches:
             - master
@@ -18,6 +24,7 @@ jobs:
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 3
             multirepository: true
             timeout: 120
@@ -36,6 +43,7 @@ jobs:
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 3
             multirepository: true
             php-image: "ezsystems/php:7.3-v2-node14"
@@ -55,6 +63,7 @@ jobs:
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 3
             multirepository: true
             php-image: "ezsystems/php:8.1-v2-node16"
@@ -73,6 +82,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
@@ -86,6 +96,7 @@ jobs:
             project-version: "^3.3.x-dev"
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
@@ -99,6 +110,7 @@ jobs:
             project-version: "^3.3.x-dev"
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
@@ -113,6 +125,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=CompoundMapURIMapHost"
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}

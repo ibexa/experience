@@ -6,6 +6,12 @@
             "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-builder",
             "package": "ezsystems/ezplatform-page-builder",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-2886-added-support-for-help-messages-for-fields as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-fieldtype",
+            "package": "ezsystems/ezplatform-page-fieldtype",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

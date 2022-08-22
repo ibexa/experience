@@ -6,12 +6,6 @@
             "repositoryUrl": "https://github.com/ezsystems/ezcommerce-shop",
             "package": "ezsystems/ezcommerce-shop",
             "shouldBeAddedAsVCS": true
-        },
-        {
-            "requirement": "dev-update-jquery as 1.0.x-dev",
-            "repositoryUrl": "https://github.com/ezsystems/ezcommerce-transaction",
-            "package": "ezsystems/ezcommerce-transaction",
-            "shouldBeAddedAsVCS": true
         }
     ]
 }

@@ -1,0 +1,35 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-3264-fixed-di-setup as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-3264-fixed-di-setup as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/content-forms",
+            "package": "ibexa/content-forms",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-3264-fixed-di-setup as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/permissions",
+            "package": "ibexa/permissions",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-3264-fixed-di-setup as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-3264-fixed-di-setup as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/compatibility-layer",
+            "package": "ibexa/compatibility-layer",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

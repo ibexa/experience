@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx_3921_follow_up as 3.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezcommerce-shop",
+            "package": "ezsystems/ezcommerce-shop",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

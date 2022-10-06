@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-bump-assets-test-fix as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/oss",
+            "package": "ibexa/oss",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-3922-dropdown-in-modal-fixes as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

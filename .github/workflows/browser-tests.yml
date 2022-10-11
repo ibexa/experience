@@ -25,7 +25,7 @@ jobs:
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 3
+            job-count: 4
             multirepository: true
             timeout: 120
         secrets:
@@ -44,7 +44,7 @@ jobs:
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 3
+            job-count: 4
             multirepository: true
             php-image: "ezsystems/php:7.3-v2-node14"
             timeout: 120
@@ -64,7 +64,7 @@ jobs:
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 3
+            job-count: 4
             multirepository: true
             php-image: "ezsystems/php:8.1-v2-node16"
             timeout: 120

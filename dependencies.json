@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-28",
+    "packages": [
+        {
+            "requirement": "dev-ibx-3729-migrate-private-customers as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-3729-added-customer-ct as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/installer",
+            "package": "ibexa/installer",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-3729-commerce-registration as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/commerce-shop",
+            "package": "ibexa/commerce-shop",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

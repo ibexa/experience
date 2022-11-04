@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-4092-fix-DomainContentResolver as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-graphql",
+            "package": "ezsystems/ezplatform-graphql",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

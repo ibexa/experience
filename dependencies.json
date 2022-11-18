@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx2461-disabled-external-entities-v2.3 as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-richtext-ghsa-2jqj-5qv2-xvcg",
+            "package": "ezsystems/ezplatform-richtext",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

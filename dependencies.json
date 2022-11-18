@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx2461-disabled-external-entities as 4.2.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-richtext-ghsa-cj3w-g42v-wcj6",
+            "package": "ibexa/fieldtype-richtext",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

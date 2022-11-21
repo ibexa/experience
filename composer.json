@@ -10,7 +10,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4 || ^8.0",
-        "ibexa/content": "~4.4.x-dev",
+        "ibexa/content": "dev-ibx-3815-commerce-cleanup as 4.4",
         "ibexa/form-builder": "~4.4.x-dev",
         "ibexa/page-builder": "~4.4.x-dev",
         "ibexa/fieldtype-address": "~4.4.x-dev",

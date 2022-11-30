@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx_2469 as 3.0.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-design-engine",
+            "package": "ezsystems/ezplatform-design-engine",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

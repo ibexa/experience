@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-4437-fixed-prices-in-product-purchased-table as 1.0.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-personalization",
+            "package": "ezsystems/ezplatform-personalization",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-3814_issue_multi_upload_alternativeText as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-admin-ui",
+            "package": "ezsystems/ezplatform-admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-3814_add_load_field_def_by_identifier as 1.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-rest",
+            "package": "ezsystems/ezplatform-rest",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

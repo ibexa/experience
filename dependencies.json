@@ -1,0 +1,41 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-4339-input-validation-fixes as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-4339-input-validation-fixes as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-4339-input-validation-fixes as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/measurement",
+            "package": "ibexa/measurement",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-4339-input-validation-fixes as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-4339-input-validation-fixes as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/product-catalog",
+            "package": "ibexa/product-catalog",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-4339-input-validation-fixes as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/site-factory",
+            "package": "ibexa/site-factory",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

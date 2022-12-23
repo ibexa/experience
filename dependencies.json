@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-40",
+    "packages": [
+        {
+            "requirement": "dev-legacy_commerce_fix as 4.4.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/compatibility-layer",
+            "package": "ibexa/compatibility-layer",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

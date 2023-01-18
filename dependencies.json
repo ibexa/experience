@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-4827-applications-list-user-assignment-wrong-styling as 4.4.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-4049-applications-list-improvements as 4.4.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/icons",
+            "package": "ibexa/icons",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-4049-applications-list-improvements as 4.4.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

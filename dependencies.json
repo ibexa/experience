@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-4877-content-preview-location-based as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-builder",
+            "package": "ezsystems/ezplatform-page-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-4877-content-preview-location-based as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-fieldtype",
+            "package": "ezsystems/ezplatform-page-fieldtype",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-4877-content-preview-location-based as 1.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-kernel",
+            "package": "ezsystems/ezplatform-kernel",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

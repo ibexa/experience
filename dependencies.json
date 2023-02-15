@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-4386-fix-js as 4.3.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/measurement",
+            "package": "ibexa/measurement",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

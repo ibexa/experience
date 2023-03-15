@@ -2,7 +2,7 @@
     "recipesEndpoint": "",
     "packages": [
         {
-            "requirement": "dev-ibx-5270-fix-broken-cache-indices as 2.3.x-dev",
+            "requirement": "dev-ibx-5260-merge-block-subscribers as 2.3.x-dev",
             "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-fieldtype",
             "package": "ezsystems/ezplatform-page-fieldtype",
             "shouldBeAddedAsVCS": true

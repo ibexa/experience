@@ -6,6 +6,12 @@
             "repositoryUrl": "https://github.com/ibexa/admin-ui-assets",
             "package": "ibexa/admin-ui-assets",
             "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-adjust-custom-styles as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
         }
     ]
 }

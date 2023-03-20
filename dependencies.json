@@ -1,0 +1,24 @@
+{
+    "recipesEndpoint": 
+"https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-60",
+    "packages": [
+        {
+            "requirement": "dev-selenium-upgrade as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/behat",
+            "package": "ibexa/behat",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-selenium4 as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/docker",
+            "package": "ibexa/docker",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-selenium4 as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

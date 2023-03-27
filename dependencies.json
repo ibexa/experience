@@ -8,7 +8,7 @@
             "shouldBeAddedAsVCS": true
         },
         {
-            "requirement": "dev-temp_ibx-5270_ibx-5119 as 1.3.x-dev",
+            "requirement": "dev-temp_ibx-5270_ibx-5119#9aadc2bb51d889d803620dc32da68f0468cd69ef as 1.3.x-dev",
             "repositoryUrl": "https://github.com/ezsystems/ezplatform-kernel",
             "package": "ezsystems/ezplatform-kernel",
             "shouldBeAddedAsVCS": false

@@ -10,7 +10,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4 || ^8.0",
-        "ibexa/content": "~4.6.x-dev",
+        "ibexa/headless": "~4.6.x-dev",
         "ibexa/form-builder": "~4.6.x-dev",
         "ibexa/page-builder": "~4.6.x-dev",
         "ibexa/fieldtype-address": "~4.6.x-dev",

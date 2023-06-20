@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-5934-sales-representive-pb-block-icon as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-5934-sales-representive-pb-block-icon as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-5934-sales-representive-pb-block-icon as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/icons",
+            "package": "ibexa/icons",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

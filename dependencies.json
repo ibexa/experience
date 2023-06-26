@@ -1,0 +1,3 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/main"
+}

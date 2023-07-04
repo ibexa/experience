@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-5863-reschedule-modal as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-5863-reschedule-modal as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/scheduler",
+            "package": "ibexa/scheduler",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-5863-reschedule-modal as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

@@ -20,7 +20,7 @@ on:
 
 jobs:
     regression-experience-setup1:
-        name: "PHP 7.4/PostgreSQL/Varnish/Redis/Multirepository"
+        name: "PHP 7.3/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -32,6 +32,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             multirepository: true
+            php-image: "ghcr.io/ibexa/docker/php:7.3-node14"
             timeout: 120
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -39,7 +40,7 @@ jobs:
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     regression-experience-setup2:
-        name: "PHP 7.3/MySQL/Multirepository"
+        name: "PHP 7.4/MySQL/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -51,7 +52,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             multirepository: true
-            php-image: "ezsystems/php:7.3-v2-node14"
+            php-image: "ghcr.io/ibexa/docker/php:7.4-node16"
             timeout: 120
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -71,7 +72,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             multirepository: true
-            php-image: "ezsystems/php:8.1-v2-node16"
+            php-image: "ghcr.io/ibexa/docker/php:8.1-node18"
             timeout: 120
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}

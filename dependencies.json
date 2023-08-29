@@ -1,0 +1,11 @@
+{
+     "recipesEndpoint": "",
+     "packages": [
+         {
+             "requirement": "dev-IBX-6437-category-filter-not-opening-in-product-list as 4.5.x-dev",
+             "repositoryUrl": "https://github.com/ibexa/tree-builder",
+             "package": "ibexa/tree-builder",
+             "shouldBeAddedAsVCS": true
+         }
+     ]
+}

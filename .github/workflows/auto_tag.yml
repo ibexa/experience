@@ -47,7 +47,7 @@ jobs:
         env:
           SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
           SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-          PARENT: ibexa/content
+          PARENT: ibexa/headless
           V_VERSION: v${{ inputs.version }}
         run: |
           for EXPONENTIAL_BACKOFF in {1..10}; do

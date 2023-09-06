@@ -42,7 +42,7 @@ jobs:
       # select(.version == "${{ env.V_VERSION }}"): filters the array to only include objects where the version property is equal to the value of the environment variable V_VERSION.
 
       # No need to validate for oss version in satis
-      - name: Validate satis for content version
+      - name: Validate satis for headless version
         if: github.event.repository.name == 'experience'
         env:
           SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}

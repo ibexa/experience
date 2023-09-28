@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-6648-fix-dependency-on-pb as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/scheduler",
+            "package": "ibexa/scheduler",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

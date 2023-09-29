@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-6444-context-menu-not-opening as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/tree-builder",
+            "package": "ibexa/tree-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

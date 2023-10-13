@@ -1,0 +1,11 @@
+{
+      "recipesEndpoint": "",
+      "packages": [
+          {
+              "requirement": "dev-ibx-6763 as 4.6.x-dev",
+              "repositoryUrl": "https://github.com/ibexa/product-catalog",
+              "package": "ibexa/product-catalog",
+              "shouldBeAddedAsVCS": false
+          }
+      ]
+  }

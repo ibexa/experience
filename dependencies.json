@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-add-devtools-driver as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/behat",
+            "package": "ibexa/behat",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-richtext-focus-enabled as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

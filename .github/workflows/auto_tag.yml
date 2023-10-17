@@ -42,20 +42,7 @@ jobs:
       # select(.version == "${{ env.V_VERSION }}"): filters the array to only include objects where the version property is equal to the value of the environment variable V_VERSION.
 
       # No need to validate for oss version in satis
-      - name: Validate satis for headless version
-        if: github.event.repository.name == 'experience'
-        env:
-          SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-          SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-          PARENT: ibexa/headless
-          V_VERSION: v${{ inputs.version }}
-        run: |
-          for EXPONENTIAL_BACKOFF in {1..10}; do
-          curl https://updates.ibexa.co/p2/${PARENT}.json -s -u $SATIS_NETWORK_KEY:$SATIS_NETWORK_TOKEN | jq -e '.packages."${{ env.PARENT }}"[] | select(.version == "${{ env.V_VERSION }}")' && break;
-            DELAY=$((2**$EXPONENTIAL_BACKOFF))
-            echo "${PARENT}:${V_VERSION} not yet available, sleeping for $DELAY seconds"
-            sleep $DELAY
-          done
+      # No need to validate for headless version in satis
 
       - name: Validate satis for experience version
         if: github.event.repository.name == 'commerce'

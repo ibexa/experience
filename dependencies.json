@@ -6,6 +6,12 @@
             "repositoryUrl": "https://github.com/ezsystems/ezplatform-kernel",
             "package": "ezsystems/ezplatform-kernel",
             "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-6504-block-render-location-all-languages as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-fieldtype",
+            "package": "ezsystems/ezplatform-page-fieldtype",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

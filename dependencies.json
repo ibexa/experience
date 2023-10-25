@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-6207_requests_containing_frontcontroller_script_causes_session_not_found_exception as 1.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-kernel",
+            "package": "ezsystems/ezplatform-kernel",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

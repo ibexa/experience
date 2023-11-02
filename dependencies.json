@@ -1,5 +1,5 @@
 {
-    "recipesEndpoint": "",
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-89",
     "packages": [
         {
             "requirement": "dev-fail-create-session as 4.5.x-dev",

@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-fail-create-session as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/docker",
+            "package": "ibexa/docker",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

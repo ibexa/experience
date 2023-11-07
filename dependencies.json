@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-6004-Remove-Sub-item-sorting-options-from-tag-detail-view as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-6004-Remove-Sub-item-sorting-options-from-tag-detail-view as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/taxonomy",
+            "package": "ibexa/taxonomy",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

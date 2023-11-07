@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-behat-increase-timeout as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-workflow",
+            "package": "ezsystems/ezplatform-workflow",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7061-fix-navigation-ids as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-7061-fix-navigation-ids as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/site-factory",
+            "package": "ibexa/site-factory",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

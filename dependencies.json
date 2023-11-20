@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-make-dashboard-optional as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/order-management",
+            "package": "ibexa/order-management",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

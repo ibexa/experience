@@ -1,4 +1,11 @@
 {
     "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-94",
-    "packages": []
+    "packages": [
+        {
+            "requirement": "dev-webhdx-patch-1 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/activity-log",
+            "package": "ibexa/activity-log",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
 }

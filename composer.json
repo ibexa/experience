@@ -16,6 +16,7 @@
         "ibexa/page-builder": "~4.6.x-dev",
         "ibexa/fieldtype-address": "~4.6.x-dev",
         "ibexa/fieldtype-page": "~4.6.x-dev",
+        "ibexa/dashboard": "~4.6.x-dev",
         "ibexa/permissions": "~4.6.x-dev",
         "ibexa/segmentation": "~4.6.x-dev",
         "ibexa/site-factory": "~4.6.x-dev",

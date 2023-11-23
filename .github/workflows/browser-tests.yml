@@ -32,7 +32,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:7.4-node14"
+            php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
             timeout: 120
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -56,7 +56,7 @@ jobs:
             use-compatibility-layer: true
             job-count: 4
             timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.0-node16"
+            php-image: "ghcr.io/ibexa/docker/php:8.0-node18"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}

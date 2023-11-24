@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-6965-active-preview-in-editorial-mode as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-builder",
+            "package": "ezsystems/ezplatform-page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

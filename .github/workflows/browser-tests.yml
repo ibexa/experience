@@ -19,119 +19,56 @@ on:
     pull_request: ~
 
 jobs:
-    regression-experience-setup1:
-        name: "PHP 7.3/PostgreSQL/Varnish/Redis/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=experience"
-            test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 4
-            multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:7.3-node14"
-            timeout: 120
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    regression-experience-setup2:
-        name: "PHP 7.4/MySQL/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=experience"
-            test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 4
-            multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:7.4-node16"
-            timeout: 120
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    regression-experience-setup3:
-        name: "PHP 8.1/MySQL/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=experience"
-            test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 4
-            multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:8.1-node18"
-            timeout: 120
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-1:
-        name: "Map\\Host matcher tests"
+        name: "PB-1"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
-            test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
-            setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-2:
-        name: "Map\\URI matcher tests"
+        name: "PB-1"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
-            test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-3:
-        name: "URIElement matcher tests"
+        name: "PB-1"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
-            test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     page-builder-matchers-4:
-        name: "Compound matcher tests"
+        name: "PB-1"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
-            test-setup-phase-1: "--mode=standard --profile=setup --suite=CompoundMapURIMapHost"
-            setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
+        secrets:
+            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
+            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
+            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    page-builder-matchers-5:
+        name: "PB-1"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        with:
+            project-edition: "experience"
+            test-suite: "--profile=browser --suite=page-builder"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}

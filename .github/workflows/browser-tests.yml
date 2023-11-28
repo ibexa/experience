@@ -74,3 +74,58 @@ jobs:
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
             TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    page-builder-matchers-6:
+        name: "PB-6"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        with:
+            project-edition: "experience"
+            test-suite: "--profile=browser --suite=page-builder"
+        secrets:
+            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
+            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
+            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    page-builder-matchers-7:
+        name: "PB-7"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        with:
+            project-edition: "experience"
+            test-suite: "--profile=browser --suite=page-builder"
+        secrets:
+            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
+            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
+            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    page-builder-matchers-8:
+        name: "PB-8"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        with:
+            project-edition: "experience"
+            test-suite: "--profile=browser --suite=page-builder"
+        secrets:
+            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
+            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
+            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    page-builder-matchers-9:
+        name: "PB-9"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        with:
+            project-edition: "experience"
+            test-suite: "--profile=browser --suite=page-builder"
+        secrets:
+            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
+            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
+            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    page-builder-matchers-10:
+        name: "PB-10"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
+        with:
+            project-edition: "experience"
+            test-suite: "--profile=browser --suite=page-builder"
+        secrets:
+            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
+            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
+            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7331-Broken-validation-in-block-attributes as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-builder",
+            "package": "ezsystems/ezplatform-page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

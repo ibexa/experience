@@ -66,7 +66,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     regression-experience-setup3:
-        name: "PHP 8.1/Node 18/MySQL/Compatibility layer"
+        name: "PHP 8.2/Node 18/MySQL/Compatibility layer"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -79,7 +79,7 @@ jobs:
             use-compatibility-layer: true
             job-count: 4
             timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.1-node18"
+            php-image: "ghcr.io/ibexa/docker/php:8.2-node18"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}

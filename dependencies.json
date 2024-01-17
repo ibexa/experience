@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7512_simplified_fulltext_criterion as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/search",
+            "package": "ibexa/search",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

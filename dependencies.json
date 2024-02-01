@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7576-firefox-input-link as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/site-context",
+            "package": "ibexa/site-context",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-7576-firefox-input-link as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/tree-builder",
+            "package": "ibexa/tree-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

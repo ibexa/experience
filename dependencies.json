@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-6491-field-type-content-type-strategy-mapper as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/product-catalog",
+            "package": "ibexa/product-catalog",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-6491-field-type-content-type-strategy-mapper as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-matrix",
+            "package": "ibexa/fieldtype-matrix",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

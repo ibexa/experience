@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7682-close-left-panel-in-PB as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-7682-close-left-panel-in-PB as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/segmentation",
+            "package": "ibexa/segmentation",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

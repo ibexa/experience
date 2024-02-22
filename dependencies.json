@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-7778-block-name-length-validation as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-fieldtype",
+            "package": "ezsystems/ezplatform-page-fieldtype",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-7778-block-name-length-validation as 2.3.x-dev",
+            "repositoryUrl": "https://github.com/ezsystems/ezplatform-page-builder",
+            "package": "ezsystems/ezplatform-page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

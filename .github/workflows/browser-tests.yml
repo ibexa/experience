@@ -23,7 +23,6 @@ jobs:
         name: "PHP 7.4/Node 14/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: ibx-6507-es
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -47,7 +46,6 @@ jobs:
         name: "PHP 8.0/Node 16/MySQL/Compatibility layer/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: ibx-6507-es
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -71,7 +69,6 @@ jobs:
         name: "PHP 8.2/Node 18/MySQL/Compatibility layer/Solr"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: ibx-6507-es
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"

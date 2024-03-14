@@ -4,30 +4,34 @@
     "license": "proprietary",
     "description": "A meta package for installing Ibexa DXP Experience edition",
     "repositories": [
-        {"type": "composer", "url": "https://updates.ibexa.co"}
+        {
+            "type": "composer",
+            "url": "https://updates.ibexa.co"
+        }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": "^7.4 || ^8.0",
-        "ibexa/activity-log": "~4.6.x-dev",
-        "ibexa/headless": "~4.6.x-dev",
-        "ibexa/form-builder": "~4.6.x-dev",
-        "ibexa/page-builder": "~4.6.x-dev",
-        "ibexa/fieldtype-address": "~4.6.x-dev",
-        "ibexa/fieldtype-page": "~4.6.x-dev",
-        "ibexa/dashboard": "~4.6.x-dev",
-        "ibexa/permissions": "~4.6.x-dev",
-        "ibexa/segmentation": "~4.6.x-dev",
-        "ibexa/site-factory": "~4.6.x-dev",
-        "ibexa/corporate-account": "~4.6.x-dev"
+        "ibexa/activity-log": "~5.0.x-dev",
+        "ibexa/headless": "~5.0.x-dev",
+        "ibexa/form-builder": "~5.0.x-dev",
+        "ibexa/page-builder": "~5.0.x-dev",
+        "ibexa/fieldtype-address": "~5.0.x-dev",
+        "ibexa/fieldtype-page": "~5.0.x-dev",
+        "ibexa/dashboard": "~5.0.x-dev",
+        "ibexa/permissions": "~5.0.x-dev",
+        "ibexa/segmentation": "~5.0.x-dev",
+        "ibexa/site-factory": "~5.0.x-dev",
+        "ibexa/corporate-account": "~5.0.x-dev"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "4.6.x-dev"
+            "dev-master": "4.6.x-dev",
+            "dev-main": "5.0.x-dev"
         }
     }
 }

@@ -4,7 +4,10 @@
     "license": "proprietary",
     "description": "A meta package for installing Ibexa DXP Experience edition",
     "repositories": [
-        {"type": "composer", "url": "https://updates.ibexa.co"}
+        {
+            "type": "composer",
+            "url": "https://updates.ibexa.co"
+        }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,

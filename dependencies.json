@@ -1,0 +1,35 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7816-ALW-files-upload as 4.5.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/assets-library-widget",
+            "package": "ibexa/assets-library-widget",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-7816-ALW-files-upload as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/image-picker",
+            "package": "ibexa/image-picker",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-7816-ALW-files-upload as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/tree-builder",
+            "package": "ibexa/tree-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-7816-ALW-files-upload as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-7816-ALW-upload-files as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/dam",
+            "package": null,
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

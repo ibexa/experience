@@ -23,6 +23,7 @@ jobs:
         name: "PHP 7.4/Node 18/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -46,6 +47,7 @@ jobs:
         name: "PHP 8.0/Node 18/MySQL/Compatibility layer/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -69,6 +71,7 @@ jobs:
         name: "PHP 8.3/Node 18/MySQL/Compatibility layer/Solr"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -92,6 +95,7 @@ jobs:
         name: "Map\\Host matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -111,6 +115,7 @@ jobs:
         name: "Map\\URI matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -129,6 +134,7 @@ jobs:
         name: "URIElement matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -147,6 +153,7 @@ jobs:
         name: "Compound matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-8154
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"

@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx_7462 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/search",
+            "package": "ibexa/search",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

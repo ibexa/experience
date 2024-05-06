@@ -23,7 +23,9 @@
         "ibexa/permissions": "~4.6.x-dev",
         "ibexa/segmentation": "~4.6.x-dev",
         "ibexa/site-factory": "~4.6.x-dev",
-        "ibexa/corporate-account": "~4.6.x-dev"
+        "ibexa/corporate-account": "~4.6.x-dev",
+        "ibexa/headless-assets": "~4.6.0@alpha",
+        "ibexa/app-switcher": "~4.6.x-dev"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"

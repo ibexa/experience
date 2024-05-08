@@ -1,0 +1,65 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/product-catalog",
+            "package": "ibexa/product-catalog",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/personalization",
+            "package": "ibexa/personalization",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/form-builder",
+            "package": "ibexa/form-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/user",
+            "package": "ibexa/user",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/tree-builder",
+            "package": "ibexa/tree-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/scheduler",
+            "package": "ibexa/scheduler",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-page",
+            "package": "ibexa/fieldtype-page",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8142 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

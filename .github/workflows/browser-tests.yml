@@ -33,6 +33,7 @@ jobs:
             job-count: 4
             multirepository: true
             timeout: 120
+            php-image: "ghcr.io/ibexa/docker/php:8.3-node18"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
@@ -42,7 +43,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     regression-experience-setup2:
-        name: "PHP 8.3/Node 18/MySQL/Compatibility layer/Elastic"
+        name: "PHP 8.3/Node 18/MySQL/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -52,9 +53,9 @@ jobs:
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            use-compatibility-layer: true
             job-count: 4
             timeout: 120
+            php-image: "ghcr.io/ibexa/docker/php:8.3-node18"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
@@ -64,7 +65,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     regression-experience-setup3:
-        name: "PHP 8.3/Node 18/MySQL/Compatibility layer/Solr"
+        name: "PHP 8.3/Node 18/MySQL/Solr"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -74,9 +75,9 @@ jobs:
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/solr.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            use-compatibility-layer: true
             job-count: 4
             timeout: 120
+            php-image: "ghcr.io/ibexa/docker/php:8.3-node18"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}

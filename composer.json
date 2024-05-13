@@ -23,7 +23,8 @@
         "ibexa/permissions": "~5.0.x-dev",
         "ibexa/segmentation": "~5.0.x-dev",
         "ibexa/site-factory": "~5.0.x-dev",
-        "ibexa/corporate-account": "~5.0.x-dev"
+        "ibexa/corporate-account": "~5.0.x-dev",
+        "ibexa/engage": "~5.0.x-dev"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"

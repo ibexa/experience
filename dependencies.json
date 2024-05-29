@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-8309_changed_filed_indetifires as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/graphql",
+            "package": "ibexa/graphql",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

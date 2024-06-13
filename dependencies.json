@@ -24,6 +24,12 @@
             "repositoryUrl": "https://github.com/ibexa/tree-builder",
             "package": "ibexa/tree-builder",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-8109-ALW-folders-management as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/dam",
+            "package": "ibexa/dam",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

@@ -6,12 +6,6 @@
             "repositoryUrl": "https://github.com/ibexa/core",
             "package": "ibexa/core",
             "shouldBeAddedAsVCS": false
-        },
-        {
-            "requirement": "dev-ibx-8322-revived-redirections-after-login as 5.0.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/storefront",
-            "package": "ibexa/storefront",
-            "shouldBeAddedAsVCS": true
         }
     ]
 }

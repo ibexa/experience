@@ -24,6 +24,12 @@
             "repositoryUrl": "https://github.com/ibexa/admin-ui",
             "package": "ibexa/admin-ui",
             "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-8109_added_step_to_cover_notification_in_page_builder as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": false
         }
     ]
 }

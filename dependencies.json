@@ -6,6 +6,12 @@
             "repositoryUrl": "https://github.com/ibexa/corporate-account",
             "package": "ibexa/corporate-account",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-adjusted_corporate_account_tests as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-address",
+            "package": "ibexa/fieldtype-address",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

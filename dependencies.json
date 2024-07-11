@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-8468-behat-adjustments as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-8468-behat-adjustments as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-address",
+            "package": "ibexa/fieldtype-address",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

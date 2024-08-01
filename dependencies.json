@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-8669-User-is-not-redirected-to-previous-page-when-the-last-image-file-is-removed as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/image-picker",
+            "package": "ibexa/image-picker",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

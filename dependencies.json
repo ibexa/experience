@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-135",
+    "packages": [
+        {
+            "requirement": "dev-ibx-8691-reworked-security as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/oauth2-server",
+            "package": "ibexa/oauth2-server",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

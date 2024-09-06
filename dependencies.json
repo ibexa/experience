@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-8706-languageCode-createdDate-filters-not-works as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-8706-languageCode-createdDate-filters-not-works as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/image-picker",
+            "package": "ibexa/image-picker",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

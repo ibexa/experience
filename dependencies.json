@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-nested-attrs-fix as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

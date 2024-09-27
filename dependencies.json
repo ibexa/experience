@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-location-metadata-fix as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/migrations",
+            "package": "ibexa/migrations",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

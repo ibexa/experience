@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-fix-avata-alignment as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/activity-log",
+            "package": "ibexa/activity-log",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

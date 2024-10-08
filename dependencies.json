@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-added-error-message as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-8784/exception-message-extension as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/rest",
+            "package": "ibexa/rest",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

@@ -19,25 +19,6 @@ on:
     pull_request: ~
 
 jobs:
-    page-builder-matchers-1:
-        name: "Map\\Host matcher tests/Varnish/Redis"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=browser --suite=page-builder"
-            test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
-            test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-            AUTOMATION_CLIENT_ID: ${{ secrets.AUTOMATION_CLIENT_ID }}
-            AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
-            AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     page-builder-matchers-2:
         name: "Map\\URI matcher tests/Varnish/Redis"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -47,6 +28,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
+            setup: "doc/docker/base-dev.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -65,6 +47,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
+            setup: "doc/docker/base-dev.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -83,7 +66,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=CompoundMapURIMapHost"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}

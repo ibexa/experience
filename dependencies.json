@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-9121-support-for-is-user-enabled-criterion as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/solr",
+            "package": "ibexa/solr",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-9121-added-support-for-is-user-enabled as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/elasticsearch",
+            "package": "ibexa/elasticsearch",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

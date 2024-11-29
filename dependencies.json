@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-7603_missing_text_field_from_url_main as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/graphql",
+            "package": "ibexa/graphql",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": ">=8.3",
         "ibexa/activity-log": "~5.0.x-dev",
         "ibexa/headless": "~5.0.x-dev",
         "ibexa/form-builder": "~5.0.x-dev",

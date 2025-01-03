@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-9168_Pagination_in_Client_list_in_admin-ui_is_broken as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/corporate-account",
+            "package": "ibexa/corporate-account",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

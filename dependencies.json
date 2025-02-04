@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-patch-2 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/emodric/core",
+            "package": "ibexa/core",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

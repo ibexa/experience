@@ -20,7 +20,7 @@ on:
 jobs:
   preparation:
     runs-on: ubuntu-latest
-    # This should allow parallel runs in a chain, e.g. OSS->Content->Experience->Commerce
+    # This should allow parallel runs in a chain, e.g. OSS->Headless->Experience->Commerce
     # whilst allowing Satis to process
     timeout-minutes: 30
 
@@ -42,20 +42,7 @@ jobs:
       # select(.version == "${{ env.V_VERSION }}"): filters the array to only include objects where the version property is equal to the value of the environment variable V_VERSION.
 
       # No need to validate for oss version in satis
-      - name: Validate satis for content version
-        if: github.event.repository.name == 'experience'
-        env:
-          SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-          SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-          PARENT: ibexa/content
-          V_VERSION: v${{ inputs.version }}
-        run: |
-          for EXPONENTIAL_BACKOFF in {1..10}; do
-          curl https://updates.ibexa.co/p2/${PARENT}.json -s -u $SATIS_NETWORK_KEY:$SATIS_NETWORK_TOKEN | jq -e '.packages."${{ env.PARENT }}"[] | select(.version == "${{ env.V_VERSION }}")' && break;
-            DELAY=$((2**$EXPONENTIAL_BACKOFF))
-            echo "${PARENT}:${V_VERSION} not yet available, sleeping for $DELAY seconds"
-            sleep $DELAY
-          done
+      # No need to validate for headless version in satis
 
       - name: Validate satis for experience version
         if: github.event.repository.name == 'commerce'
@@ -144,7 +131,7 @@ jobs:
         run: jq '.require["ibexa/oss"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Experience
         if: github.event.repository.name == 'experience'
-        run: jq '.require["ibexa/content"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
+        run: jq '.require["ibexa/headless"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Commerce
         if: github.event.repository.name == 'commerce'
         run: jq '.require["ibexa/experience"] |= "${{ inputs.version }}"' composer.json | sponge composer.json

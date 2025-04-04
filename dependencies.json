@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-publish_grace_period as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/mateuszbieniek/core",
+            "package": "ibexa/core",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

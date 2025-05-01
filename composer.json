@@ -24,7 +24,7 @@
         "ibexa/segmentation": "dev-ibx-8471-symfony-7 as 5.0.x-dev",
         "ibexa/site-factory": "dev-ibx-8471-symfony-7 as 5.0.x-dev",
         "ibexa/corporate-account": "dev-ibx-8471-symfony-7 as 5.0.x-dev",
-        "ibexa/engage": "~5.0.x-dev"
+        "ibexa/engage": "dev-ibx-8471-symfony-7 as 5.0.x-dev"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"

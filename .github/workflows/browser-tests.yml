@@ -23,7 +23,6 @@ jobs:
         name: "PHP 7.4/Node 18/PostgreSQL 14.15/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -47,7 +46,6 @@ jobs:
         name: "PHP 8.0/Node 18/MySQL 8.0/Compatibility layer/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -71,7 +69,6 @@ jobs:
         name: "PHP 8.3/Node 18/MySQL 8.4/Compatibility layer/Solr"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -95,7 +92,6 @@ jobs:
         name: "Map\\Host matcher tests/MariaDB 10.11"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -115,7 +111,6 @@ jobs:
         name: "Map\\URI matcher tests/MariaDB 10.11"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -135,7 +130,6 @@ jobs:
         name: "URIElement matcher tests/MariaDB 10.11"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -155,7 +149,6 @@ jobs:
         name: "Compound matcher tests/MariaDB 10.11"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: 'ibx-8543'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"

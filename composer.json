@@ -26,9 +26,6 @@
         "ibexa/corporate-account": "~5.0.x-dev",
         "ibexa/engage": "~5.0.x-dev"
     },
-    "require-dev": {
-        "ibexa/ci-scripts": "^0.2@dev"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "5.0.x-dev"

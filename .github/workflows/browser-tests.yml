@@ -19,75 +19,8 @@ on:
     pull_request: ~
 
 jobs:
-    regression-experience-setup1:
-        name: "PHP 8.3/Node 22/PostgreSQL 14.15/Varnish/Redis/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=experience"
-            test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 4
-            multirepository: true
-            timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-            AUTOMATION_CLIENT_ID: ${{ secrets.AUTOMATION_CLIENT_ID }}
-            AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
-            AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
-    regression-experience-setup2:
-        name: "PHP 8.3/Node 22/MySQL 8.0/Elastic"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=experience"
-            test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 4
-            timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-            AUTOMATION_CLIENT_ID: ${{ secrets.AUTOMATION_CLIENT_ID }}
-            AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
-            AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
-    regression-experience-setup3:
-        name: "PHP 8.3/Node 22/MySQL 8.4/Solr"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
-        with:
-            project-edition: "experience"
-            project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=experience"
-            test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr.yml:doc/docker/selenium.yml"
-            send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            job-count: 4
-            timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-            AUTOMATION_CLIENT_ID: ${{ secrets.AUTOMATION_CLIENT_ID }}
-            AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
-            AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     page-builder-matchers-1:
-        name: "Map\\Host matcher tests/MariaDB 10.11"
+        name: "Map\\Host matcher tests/MariaDB 10.11/Varnish/Redis"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -95,7 +28,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/multihost.yml:doc/docker/selenium.yml:doc/docker/varnish.yml:doc/docker/redis.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -106,7 +39,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     page-builder-matchers-2:
-        name: "Map\\URI matcher tests/MariaDB 10.11"
+        name: "Map\\URI matcher tests/MariaDB 10.11/Varnish/Redis"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -114,7 +47,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/selenium.yml:doc/docker/varnish.yml:doc/docker/redis.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -125,7 +58,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     page-builder-matchers-3:
-        name: "URIElement matcher tests/MariaDB 10.11"
+        name: "URIElement matcher tests/MariaDB 10.11/Varnish/Redis"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -133,7 +66,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/selenium.yml:doc/docker/varnish.yml:doc/docker/redis.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
@@ -144,7 +77,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     page-builder-matchers-4:
-        name: "Compound matcher tests/MariaDB 10.11"
+        name: "Compound matcher tests/MariaDB 10.11/Varnish/Redis"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -152,7 +85,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=CompoundMapURIMapHost"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/multihost.yml:doc/docker/selenium.yml:doc/docker/varnish.yml:doc/docker/redis.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}

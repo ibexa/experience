@@ -65,8 +65,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     regression-experience-setup3:
-      name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8"
-
+        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"

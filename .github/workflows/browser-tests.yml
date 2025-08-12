@@ -89,7 +89,7 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     page-builder-matchers-1:
-        name: "Map\\Host matcher tests/MariaDB 10.11"
+        name: "Map\\Host matcher tests/MariaDB 10.11/Solr 7"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"

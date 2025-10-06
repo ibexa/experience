@@ -20,7 +20,7 @@ on:
 
 jobs:
     regression-experience-setup1:
-        name: "PHP 7.4/Node 18/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
+        name: "PHP 7.4/Node 18/PostgreSQL 14.15/Varnish/Redis 7.2/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-10494'
@@ -29,7 +29,7 @@ jobs:
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql18.yml:doc/docker/varnish.yml:doc/docker/redis7.2.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis7.2.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             multirepository: true
@@ -71,7 +71,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
         secrets: inherit
     page-builder-matchers-1:
-        name: "Map\\Host matcher tests/MariaDB 10.11/Solr 7"
+        name: "Map\\Host matcher tests/PostgreSQL 18.0/Solr 7"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-10494'
@@ -80,7 +80,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/solr7.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql18.yml:doc/docker/solr7.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-2:

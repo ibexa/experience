@@ -34,11 +34,7 @@ jobs:
             multirepository: true
             php-image: "ghcr.io/ibexa/docker/php:7.3-node14"
             timeout: 120
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit
     regression-experience-setup2:
         name: "PHP 7.4/Node 16/MySQL/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -54,11 +50,7 @@ jobs:
             multirepository: true
             php-image: "ghcr.io/ibexa/docker/php:7.4-node16"
             timeout: 120
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit
     regression-experience-setup3:
         name: "PHP 8.3/Node 18/MySQL/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -74,11 +66,7 @@ jobs:
             multirepository: true
             php-image: "ghcr.io/ibexa/docker/php:8.3-node18"
             timeout: 120
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit
     page-builder-matchers-1:
         name: "Map\\Host matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -89,11 +77,7 @@ jobs:
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit
     page-builder-matchers-2:
         name: "Map\\URI matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -103,11 +87,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit
     page-builder-matchers-3:
         name: "URIElement matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -117,11 +97,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit
     page-builder-matchers-4:
         name: "Compound matcher tests"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
@@ -132,8 +108,4 @@ jobs:
             test-setup-phase-1: "--mode=standard --profile=setup --suite=CompoundMapURIMapHost"
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-        secrets:
-            SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
-            SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-            TRAVIS_GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        secrets: inherit

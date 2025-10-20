@@ -18,18 +18,6 @@
             "repositoryUrl": "https://github.com/ibexa/dashboard",
             "package": "ibexa/dashboard",
             "shouldBeAddedAsVCS": true
-        },
-        {
-            "requirement": "dev-IBX-10529-disable-help-for-regression as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/admin-ui",
-            "package": "ibexa/admin-ui",
-            "shouldBeAddedAsVCS": false
-        },
-        {
-            "requirement": "dev-IBX-10529-disable-help-for-regression as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/behat",
-            "package": "ibexa/behat",
-            "shouldBeAddedAsVCS": false
         }
     ]
 }

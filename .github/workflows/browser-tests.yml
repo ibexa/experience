@@ -80,7 +80,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-2:
-        name: "Map\\URI matcher tests/MariaDB 10.11/Solr 9"
+        name: "Map\\URI matcher tests/MariaDB 11.4/Solr 9"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -88,7 +88,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/solr9.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/solr9.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-3:

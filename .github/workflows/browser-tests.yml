@@ -54,7 +54,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.0-node20"
         secrets: inherit
     regression-experience-setup3:
-        name: "PHP 8.3/Node 22/MySQL 8.4/Compatibility layer/Solr 8"
+        name: "PHP 8.3/Node 22/MySQL 8.4/Compatibility layer/Solr 8/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'poc-spi-latest'
@@ -63,7 +63,7 @@ jobs:
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
             job-count: 4

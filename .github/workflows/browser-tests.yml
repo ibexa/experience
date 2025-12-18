@@ -23,6 +23,7 @@ jobs:
         name: "PHP 8.3/Node 22/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -39,6 +40,7 @@ jobs:
         name: "PHP 8.3/Node 22/MySQL 8.0/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -51,48 +53,52 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
         secrets: inherit
     regression-experience-setup3:
-        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8"
+        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             timeout: 120
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
         secrets: inherit
     page-builder-matchers-1:
-        name: "Map\\Host matcher tests/PostgreSQL 14.15"
+        name: "Map\\Host matcher tests/PostgreSQL 14.15/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/multihost.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/multihost.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-2:
-        name: "Map\\URI matcher tests/MariaDB 11.4/Solr 9"
+        name: "Map\\URI matcher tests/MariaDB 11.4/Solr 9/Redis latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapURI"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/solr9.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/solr9.yml:doc/docker/redis-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-3:
         name: "URIElement matcher tests/MariaDB 10.11"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -105,6 +111,7 @@ jobs:
         name: "Compound matcher tests/MariaDB 10.11"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"

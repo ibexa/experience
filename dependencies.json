@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-10495 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/docker",
+            "package": "ibexa/docker",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-10495-es8-support as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/elasticsearch",
+            "package": "ibexa/elasticsearch",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

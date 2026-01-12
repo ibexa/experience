@@ -37,7 +37,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
         secrets: inherit
     regression-experience-setup2:
-        name: "PHP 8.3/Node 22/MySQL 8.0/Elastic"
+        name: "PHP 8.3/Node 22/MySQL 8.0/Elastic 8"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-10495'
@@ -46,7 +46,7 @@ jobs:
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic8.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             timeout: 120

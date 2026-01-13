@@ -51,7 +51,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
         secrets: inherit
     regression-experience-setup3:
-        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8/Valkey latest""
+        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -66,7 +66,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
         secrets: inherit
     page-builder-matchers-1:
-        name: "Map\\Host matcher tests/PostgreSQL 14.15/Valkey latest""
+        name: "Map\\Host matcher tests/PostgreSQL 14.15/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -74,7 +74,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=MapHost"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/multihost.yml::doc/docker/valkey-latest.ymldoc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/multihost.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-2:

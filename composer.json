@@ -9,22 +9,20 @@
             "url": "https://updates.ibexa.co"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": ">=8.3",
-        "ibexa/activity-log": "~5.0.x-dev",
-        "ibexa/headless": "~5.0.x-dev",
-        "ibexa/form-builder": "~5.0.x-dev",
-        "ibexa/page-builder": "~5.0.x-dev",
-        "ibexa/fieldtype-address": "~5.0.x-dev",
-        "ibexa/fieldtype-page": "~5.0.x-dev",
-        "ibexa/dashboard": "~5.0.x-dev",
-        "ibexa/permissions": "~5.0.x-dev",
-        "ibexa/segmentation": "~5.0.x-dev",
-        "ibexa/site-factory": "~5.0.x-dev",
-        "ibexa/corporate-account": "~5.0.x-dev",
-        "ibexa/engage": "~5.0.x-dev"
+        "ibexa/activity-log": "5.0.5",
+        "ibexa/headless": "5.0.5",
+        "ibexa/form-builder": "5.0.5",
+        "ibexa/page-builder": "5.0.5",
+        "ibexa/fieldtype-address": "5.0.5",
+        "ibexa/fieldtype-page": "5.0.5",
+        "ibexa/dashboard": "5.0.5",
+        "ibexa/permissions": "5.0.5",
+        "ibexa/segmentation": "5.0.5",
+        "ibexa/site-factory": "5.0.5",
+        "ibexa/corporate-account": "5.0.5",
+        "ibexa/engage": "5.0.5"
     },
     "extra": {
         "branch-alias": {

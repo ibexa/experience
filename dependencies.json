@@ -1,10 +1,34 @@
 {
-    "recipesEndpoint": "",
+    "recipesEndpoint": "https://api.github.com/repos/micszo/recipes-dev/contents/index.json?ref=flex/pull-2",
     "packages": [
         {
             "requirement": "dev-bump-dependencies as 4.6.x-dev",
             "repositoryUrl": "https://github.com/ibexa/behat",
             "package": "ibexa/behat",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-10495-bump-guzzle as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/automated-translation",
+            "package": "ibexa/automated-translation",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-support-es8 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/elasticsearch8",
+            "package": "ibexa/elasticsearch8",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-10495-support-unsplash-client-3.2 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-unsplash",
+            "package": "ibexa/connector-unsplash",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-10495-bump-ES-to-8 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/oss",
+            "package": "ibexa/oss",
             "shouldBeAddedAsVCS": false
         }
     ]

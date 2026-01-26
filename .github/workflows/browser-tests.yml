@@ -36,7 +36,7 @@ jobs:
             timeout: 120
         secrets: inherit
     regression-experience-setup2:
-        name: "PHP 8.0/Node 20/MySQL 8.0/Compatibility layer/Elastic"
+        name: "PHP 8.0/Node 20/MySQL 8.0/Compatibility layer/Elastic 8"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -44,7 +44,7 @@ jobs:
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic8.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
             job-count: 4
@@ -92,7 +92,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-3:
-        name: "URIElement matcher tests/MariaDB 10.11/Redis 5.0"
+        name: "URIElement matcher tests/MariaDB 10.11/Elastic/Redis 5.0"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
@@ -100,7 +100,7 @@ jobs:
             test-suite: "--profile=browser --suite=page-builder"
             test-setup-phase-1: "--mode=standard --profile=setup --suite=URIElement"
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/redis5.0.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/elastic.yml:doc/docker/redis5.0.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-4:

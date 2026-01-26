@@ -30,6 +30,12 @@
             "repositoryUrl": "https://github.com/ibexa/oss",
             "package": "ibexa/oss",
             "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-ibx-10495-4.6 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/docker",
+            "package": "ibexa/docker",
+            "shouldBeAddedAsVCS": false
         }
     ]
 }

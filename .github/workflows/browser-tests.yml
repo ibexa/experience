@@ -97,7 +97,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     page-builder-matchers-3:
-        name: "URIElement matcher tests/MariaDB 10.11/Elastic/Redis 5.0"
+        name: "URIElement matcher tests/MariaDB 10.11/Elastic 7/Redis 5.0"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-10495-4.6'

@@ -14,12 +14,6 @@
             "shouldBeAddedAsVCS": false
         },
         {
-            "requirement": "dev-support-es8 as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/elasticsearch8",
-            "package": "ibexa/elasticsearch8",
-            "shouldBeAddedAsVCS": true
-        },
-        {
             "requirement": "dev-ibx-10495-support-unsplash-client-3.2 as 4.6.x-dev",
             "repositoryUrl": "https://github.com/ibexa/connector-unsplash",
             "package": "ibexa/connector-unsplash",

@@ -18,12 +18,6 @@
             "repositoryUrl": "https://github.com/ibexa/fieldtype-richtext-rte",
             "package": "ibexa/fieldtype-richtext-rte",
             "shouldBeAddedAsVCS": true
-        },
-        {
-            "requirement": "dev-ibx-11328 as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/behat",
-            "package": "ibexa/behat",
-            "shouldBeAddedAsVCS": false
         }
     ]
 }

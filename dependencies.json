@@ -12,12 +12,6 @@
             "repositoryUrl": "https://github.com/ibexa/docker",
             "package": "ibexa/docker",
             "shouldBeAddedAsVCS": false
-        },
-        {
-            "requirement": "dev-bumped-firebase-php-jwt as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/fieldtype-richtext-rte",
-            "package": "ibexa/fieldtype-richtext-rte",
-            "shouldBeAddedAsVCS": true
         }
     ]
 }

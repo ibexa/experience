@@ -6,12 +6,6 @@
             "repositoryUrl": "https://github.com/ibexa/docker",
             "package": "ibexa/docker",
             "shouldBeAddedAsVCS": false
-        },
-        {
-            "requirement": "dev-IBX-11179-om-signature as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/core",
-            "package": "ibexa/core",
-            "shouldBeAddedAsVCS": false
         }
     ]
 }

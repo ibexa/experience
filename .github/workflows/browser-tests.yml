@@ -20,7 +20,7 @@ on:
 
 jobs:
     regression-experience-setup1:
-        name: "PHP 8.4/Node 22/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
+        name: "PHP 7.4/Node 18/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@ibx-11328
         with:
             ci-scripts-branch: 'ibx-11328-php-8.4'
@@ -33,11 +33,11 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
+            php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
             timeout: 120
         secrets: inherit
     regression-experience-setup2:
-        name: "PHP 8.4/Node 22/MySQL 8.0/Compatibility layer/Elastic 7"
+        name: "PHP 8.0/Node 20/MySQL 8.0/Compatibility layer/Elastic 8"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@ibx-11328
         with:
             ci-scripts-branch: 'ibx-11328-php-8.4'
@@ -46,12 +46,12 @@ jobs:
             test-suite: "--profile=regression --suite=experience"
             test-setup-phase-1: "--profile=regression --suite=setup-experience --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-experience --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.0.yml:doc/docker/elastic8.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
             job-count: 4
             timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
+            php-image: "ghcr.io/ibexa/docker/php:8.0-node20"
         secrets: inherit
     regression-experience-setup3:
         name: "PHP 8.4/Node 22/MySQL 8.4/Compatibility layer/Solr 8/Valkey latest"
@@ -82,7 +82,6 @@ jobs:
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/solr7.yml:doc/docker/multihost.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
         secrets: inherit
     page-builder-matchers-2:
         name: "Map\\URI matcher tests/MariaDB 11.4/Solr 9/Redis latest"
@@ -96,7 +95,6 @@ jobs:
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
             setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/solr9.yml:doc/docker/redis-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
         secrets: inherit
     page-builder-matchers-3:
         name: "URIElement matcher tests/MariaDB 10.11/Elastic 7/Redis 5.0"
@@ -110,7 +108,6 @@ jobs:
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
             setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/elastic.yml:doc/docker/redis5.0.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
         secrets: inherit
     page-builder-matchers-4:
         name: "Compound matcher tests/MariaDB 10.11/Redis 4.0"
@@ -124,5 +121,4 @@ jobs:
             test-setup-phase-2: '--mode=standard --profile=setup --suite=page-builder --tags=@setup'
             setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb.yml:doc/docker/multihost.yml:doc/docker/redis4.0.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
         secrets: inherit

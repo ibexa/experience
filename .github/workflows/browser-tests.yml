@@ -21,7 +21,7 @@ on:
 jobs:
     regression-experience-setup1:
         name: "PHP 7.4/Node 18/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@ibx-11328
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-11328-php-8.4'
             project-edition: "experience"
@@ -38,7 +38,7 @@ jobs:
         secrets: inherit
     regression-experience-setup2:
         name: "PHP 8.0/Node 20/MySQL 8.0/Compatibility layer/Elastic 8"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@ibx-11328
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-11328-php-8.4'
             project-edition: "experience"
@@ -55,7 +55,7 @@ jobs:
         secrets: inherit
     regression-experience-setup3:
         name: "PHP 8.4/Node 22/MySQL 8.4/Compatibility layer/Solr 8/Valkey latest"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@ibx-11328
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             ci-scripts-branch: 'ibx-11328-php-8.4'
             project-edition: "experience"

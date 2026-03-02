@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-11333_fixed_validations_stringlength as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/installer",
+            "package": "ibexa/installer",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-11333_fixed_validations_stringlength_fileextension as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/form-builder",
+            "package": "ibexa/form-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

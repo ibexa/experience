@@ -6,12 +6,6 @@
             "repositoryUrl": "https://github.com/ibexa/docker",
             "package": "ibexa/docker",
             "shouldBeAddedAsVCS": false
-        },
-        {
-            "requirement": "v4.6.27 as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/core",
-            "package": "ibexa/core",
-            "shouldBeAddedAsVCS": false
         }
     ]
 }

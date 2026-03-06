@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-10953-flaky-tests-fix as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-openai",
+            "package": "ibexa/connector-openai",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

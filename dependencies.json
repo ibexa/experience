@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-introduce-table-component as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/product-catalog",
+            "package": "ibexa/product-catalog",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-10990-ibexa-table as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/twig-components",
+            "package": "ibexa/twig-components",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

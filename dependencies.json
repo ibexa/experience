@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-add-refine-text-pb-block-settings as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-ai",
+            "package": "ibexa/connector-ai",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-handle-left-position-in-popup-menu as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

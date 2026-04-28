@@ -13,18 +13,18 @@
     "prefer-stable": true,
     "require": {
         "php": ">=8.3",
-        "ibexa/activity-log": "~5.0.x-dev",
-        "ibexa/headless": "~5.0.x-dev",
-        "ibexa/form-builder": "~5.0.x-dev",
-        "ibexa/page-builder": "~5.0.x-dev",
-        "ibexa/fieldtype-address": "~5.0.x-dev",
-        "ibexa/fieldtype-page": "~5.0.x-dev",
-        "ibexa/dashboard": "~5.0.x-dev",
-        "ibexa/permissions": "~5.0.x-dev",
-        "ibexa/segmentation": "~5.0.x-dev",
-        "ibexa/site-factory": "~5.0.x-dev",
-        "ibexa/corporate-account": "~5.0.x-dev",
-        "ibexa/engage": "~5.0.x-dev"
+        "ibexa/activity-log": "~6.0.x-dev",
+        "ibexa/headless": "~6.0.x-dev",
+        "ibexa/form-builder": "~6.0.x-dev",
+        "ibexa/page-builder": "~6.0.x-dev",
+        "ibexa/fieldtype-address": "~6.0.x-dev",
+        "ibexa/fieldtype-page": "~6.0.x-dev",
+        "ibexa/dashboard": "~6.0.x-dev",
+        "ibexa/permissions": "~6.0.x-dev",
+        "ibexa/segmentation": "~6.0.x-dev",
+        "ibexa/site-factory": "~6.0.x-dev",
+        "ibexa/corporate-account": "~6.0.x-dev",
+        "ibexa/engage": "~6.0.x-dev"
     },
     "extra": {
         "branch-alias": {

@@ -2,7 +2,7 @@
     "recipesEndpoint": "",
     "packages": [
         {
-            "requirement": "dev-ibx-11173-added-site-factory-to-regressions as 5.0.x-dev",
+            "requirement": "dev-tmp-ibx-11173-cumulative-pr-159-160 as 5.0.x-dev",
             "repositoryUrl": "https://github.com/ibexa/site-factory",
             "package": "ibexa/site-factory",
             "shouldBeAddedAsVCS": true

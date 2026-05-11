@@ -3,8 +3,8 @@
     "packages": [
         {
             "requirement": "dev-ibx-11609-added-label-to-ranges as 4.6.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/elasticsearch",
-            "package": "ibexa/elasticsearch",
+            "repositoryUrl": "https://github.com/ibexa/elasticsearch8",
+            "package": "ibexa/elasticsearch8",
             "shouldBeAddedAsVCS": true
         }
     ]

@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-11436_enable_field_group_tab_switcher_in_landing_page_edit as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-11436_make_main_container_class_in_edit_base_html_twig_reusable as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx_11167 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-raptor",
+            "package": "ibexa/connector-raptor",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

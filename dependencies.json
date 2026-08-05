@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-merge/4.6-to-5.0 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/site-factory",
+            "package": "ibexa/site-factory",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

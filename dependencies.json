@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-12063-audience-picker-v2 as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/segmentation",
+            "package": "ibexa/segmentation",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-12063-behat-fix-v2 as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

@@ -12,6 +12,12 @@
             "repositoryUrl": "https://github.com/ibexa/core",
             "package": "ibexa/core",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-diagnostic/catalog-create-permission-logging as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/product-catalog",
+            "package": "ibexa/product-catalog",
+            "shouldBeAddedAsVCS": true
         }
     ]
 }

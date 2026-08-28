@@ -8,9 +8,9 @@
             "shouldBeAddedAsVCS": true
         },
         {
-            "requirement": "dev-diagnostic/setup-experience-timecontext as 5.0.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/behat",
-            "package": "ibexa/behat",
+            "requirement": "dev-diagnostic/permission-resolver-session-logging as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/core",
+            "package": "ibexa/core",
             "shouldBeAddedAsVCS": true
         }
     ]

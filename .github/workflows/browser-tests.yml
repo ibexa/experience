@@ -20,7 +20,7 @@ on:
 
 jobs:
     regression-experience-setup1:
-        name: "PHP 8.3/Node 22/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
+        name: "PHP 8.5/Node 22/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
@@ -34,10 +34,10 @@ jobs:
             job-count: 4
             multirepository: true
             timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
         secrets: inherit
     regression-experience-setup2:
-        name: "PHP 8.4/Node 22/MySQL 8.0/Elastic 9"
+        name: "PHP 8.5/Node 22/MySQL 8.0/Elastic 9"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
@@ -50,10 +50,10 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
         secrets: inherit
     regression-experience-setup3:
-        name: "PHP 8.4/Node 22/MySQL 8.4/Solr 8/Valkey latest"
+        name: "PHP 8.5/Node 22/MySQL 8.4/Solr 8/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
@@ -66,13 +66,14 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             job-count: 4
             timeout: 120
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
         secrets: inherit
     page-builder-matchers-1:
         name: "Map\\Host matcher tests/PostgreSQL 14.15/Elastic 8/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -86,6 +87,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -99,6 +101,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -112,6 +115,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=browser --suite=page-builder"
@@ -121,7 +125,7 @@ jobs:
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
         secrets: inherit
     site-factory-regressions:
-        name: "Site Factory tests/PHP 8.4/Node 22/PostgreSQL 18.0"
+        name: "Site Factory tests/PHP 8.5/Node 22/PostgreSQL 18.0"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
         with:
             ci-scripts-branch: "k8s-satis"
@@ -132,5 +136,5 @@ jobs:
             test-setup-phase-1: '--mode=standard --profile=siteFactory --suite=setup'
             test-setup-phase-2: '--mode=standard --profile=siteFactory --suite=create'
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
-            php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
+            php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
         secrets: inherit

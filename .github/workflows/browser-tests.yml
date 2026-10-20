@@ -21,9 +21,8 @@ on:
 jobs:
     regression-experience-setup1:
         name: "PHP 8.5/Node 22/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -38,9 +37,8 @@ jobs:
         secrets: inherit
     regression-experience-setup2:
         name: "PHP 8.5/Node 22/MySQL 8.0/Elastic 9"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -54,9 +52,8 @@ jobs:
         secrets: inherit
     regression-experience-setup3:
         name: "PHP 8.5/Node 22/MySQL 8.4/Solr 8/Valkey latest"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=experience"
@@ -70,9 +67,8 @@ jobs:
         secrets: inherit
     page-builder-matchers-1:
         name: "Map\\Host matcher tests/PostgreSQL 14.15/Elastic 8/Valkey latest"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -84,9 +80,8 @@ jobs:
         secrets: inherit
     page-builder-matchers-2:
         name: "Map\\URI matcher tests/MariaDB 11.4/Solr 9/Redis latest"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -98,9 +93,8 @@ jobs:
         secrets: inherit
     page-builder-matchers-3:
         name: "URIElement matcher tests/MariaDB 10.11"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -112,9 +106,8 @@ jobs:
         secrets: inherit
     page-builder-matchers-4:
         name: "Compound matcher tests/MariaDB 10.11"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -126,9 +119,8 @@ jobs:
         secrets: inherit
     site-factory-regressions:
         name: "Site Factory tests/PHP 8.5/Node 22/PostgreSQL 18.0"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@k8s-satis
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            ci-scripts-branch: "k8s-satis"
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
             setup: "doc/docker/base-dev.yml:doc/docker/multihost.yml:doc/docker/db-postgresql18.yml:doc/docker/selenium.yml"

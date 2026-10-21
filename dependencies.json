@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-merge-up/IBX-12846-to-5.0 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui-20d9183c",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

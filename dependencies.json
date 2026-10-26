@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev-063cc1bf/contents/index.json?ref=flex/pull-1",
+    "packages": [
+        {
+            "requirement": "dev-IBX-12963 as dev-5.0-next",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui-assets-e0619dd0",
+            "package": "ibexa/admin-ui-assets",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-upgrade-cke as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/ckeditor-premium",
+            "package": "ibexa/ckeditor-premium",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-upgrade-cke as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-ai",
+            "package": "ibexa/connector-ai",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

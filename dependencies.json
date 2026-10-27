@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-11833-unpredictably-added-seo-field-when-editing-CT as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/seo",
+            "package": "ibexa/seo",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-11833-unpredictably-added-seo-field-when-editing-CT as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}

@@ -67,7 +67,7 @@ jobs:
         secrets: inherit
     page-builder-matchers-1:
         name: "Map\\Host matcher tests/PostgreSQL 14.15/Elastic 7/Valkey latest"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@IBX-12032-per-version-php-image
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -79,7 +79,7 @@ jobs:
         secrets: inherit
     page-builder-matchers-2:
         name: "Map\\URI matcher tests/MariaDB 11.4/Solr 9/Redis latest"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@IBX-12032-per-version-php-image
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -91,7 +91,7 @@ jobs:
         secrets: inherit
     page-builder-matchers-3:
         name: "URIElement matcher tests/MariaDB 10.11"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@IBX-12032-per-version-php-image
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}
@@ -103,7 +103,7 @@ jobs:
         secrets: inherit
     page-builder-matchers-4:
         name: "Compound matcher tests/MariaDB 10.11"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@IBX-12032-per-version-php-image
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "experience"
             project-version: ${{ github.event.inputs.project-version }}

@@ -1,0 +1,29 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-12759-BE-Update-menu-structure-and-Audiences-tab-placement-Administration-Personalization as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/segmentation",
+            "package": "ibexa/segmentation",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-12759-BE-Update-menu-structure-and-Audiences-tab-placement-Administration-Personalization as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-qualifio",
+            "package": "ibexa/connector-qualifio",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-12759-BE-Update-menu-structure-and-Audiences-tab-placement-Administration-Personalization as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-raptor",
+            "package": "ibexa/connector-raptor",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-12759-BE-Update-menu-structure-and-Audiences-tab-placement-Administration-Personalization as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/featured",
+            "package": "ibexa/featured",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}

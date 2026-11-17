@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-288",
+    "packages": [
+        {
+            "requirement": "dev-IBX-12997-default-version-tag as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/api-platform",
+            "package": "ibexa/api-platform",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-13001-v3-client as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/page-builder",
+            "package": "ibexa/page-builder",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}
